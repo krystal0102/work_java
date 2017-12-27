@@ -1,0 +1,17 @@
+package control.loop;
+
+public class While {
+
+	public static void main(String[] args) {
+		int i = 1;
+		
+		while ( i <= 10 ) {
+			//i값을 먼저 쓰고 반복~
+			System.out.print(i++ + " ");
+		}
+		
+		System.out.println();	
+
+	}
+
+}
