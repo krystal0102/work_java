@@ -8,21 +8,21 @@ public class test2 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.println("ë‘ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 		
-		//¸í½ÃÀû Çüº¯È¯
+		//ëª…ì‹œì  í˜•ë³€í™˜
 		int a = (int)input.nextDouble();
 		int b = (int)input.nextDouble();
 		
-		/* ¹¬½ÃÀû Çüº¯È¯
-		 * a¿Í bÀÇ ÇÕÀº intÇüÀÌ°í double sumº¯¼ö¿¡ Áı¾î³ÖÀ»¶§ ÀÚµ¿À¸·Î doubleÇüÀ¸·Î º¯°æµÊ
-		 * double sum°ú intÇüÀ» 2·Î ³ª´³±â ¶§¹®¿¡ °á°ú´Â  doubleÇüÀÌ°í ¸¶Âù°¡Áö·Î 
-		 * double avgº¯¼ö¿¡ ³Ö¾ú±â ¶§¹®¿¡ ÀÚµ¿À¸·Î doubleÇüÀ¸·Î º¯°æ
+		/* ë¬µì‹œì  í˜•ë³€í™˜
+		 * aì™€ bì˜ í•©ì€ intí˜•ì´ê³  double sumë³€ìˆ˜ì— ì§‘ì–´ë„£ì„ë•Œ ìë™ìœ¼ë¡œ doubleí˜•ìœ¼ë¡œ ë³€ê²½ë¨
+		 * double sumê³¼ intí˜•ì„ 2ë¡œ ë‚˜ëˆ´ê¸° ë•Œë¬¸ì— ê²°ê³¼ëŠ”  doubleí˜•ì´ê³  ë§ˆì°¬ê°€ì§€ë¡œ 
+		 * double avgë³€ìˆ˜ì— ë„£ì—ˆê¸° ë•Œë¬¸ì— ìë™ìœ¼ë¡œ doubleí˜•ìœ¼ë¡œ ë³€ê²½
 		 */
 		double sum = a+b;
 		double avg = sum /2;
 		
-		System.out.printf("ÇÕ: %.2f Æò±Õ: %.2f %n", sum, avg);
+		System.out.printf("í•©: %.2f í‰ê· : %.2f %n", sum, avg);
 		
 		input.close();
 		

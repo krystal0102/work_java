@@ -6,8 +6,8 @@ public class BitLogicalOP {
 		
 		/*1byte = 8bit
 		 * 1byte = 4byte
-		 *µû¶ó¼­ int 4 = 32bit
-		 *4¸¦ ÀÌÁø¼ö·Î Ç¥ÇöÇÏ¸é 100(2)
+		 *ë”°ë¼ì„œ int 4 = 32bit
+		 *4ë¥¼ ì´ì§„ìˆ˜ë¡œ í‘œí˜„í•˜ë©´ 100(2)
 		 */
 		
 		int x = 4, y = 7;

@@ -2,16 +2,16 @@ package programming.basic;
 
 public class HelloLiterals {
 	
-	static long creditCardNumber = 1234_5678_9012_3456L; //Java7ºÎÅÍ Àû¿ë. ¾ğ´õ¹Ù´Â º¸±âÆíÇÏ¶ó°í ¾´°Í. ±¤¹üÀ§ÇÑ È£È¯À» À§ÇØ¼­ ¾²Áö ¾Ê´Â°É ÃßÃµÇÏ±âµµÇÔ
+	static long creditCardNumber = 1234_5678_9012_3456L; //Java7ë¶€í„° ì ìš©. ì–¸ë”ë°”ëŠ” ë³´ê¸°í¸í•˜ë¼ê³  ì“´ê²ƒ. ê´‘ë²”ìœ„í•œ í˜¸í™˜ì„ ìœ„í•´ì„œ ì“°ì§€ ì•ŠëŠ”ê±¸ ì¶”ì²œí•˜ê¸°ë„í•¨
  	static long socialSecurityNumber = 999_99_9999L; 
 	static float pi = 3.14_15F;
 	
 	public static void main(String[] args) {
-		System.out.println(0b1010);				//ÀÌÁø¼ö b´Â ÀÌÁø¼ö¸¦ ¶æÇÔ
-		System.out.println(016);				//8Áø¼ö
-		System.out.println(0x1F);				//16Áø¼ö
-		System.out.println(3.14f);				//floatÇü
-		System.out.println(3.1415D);			//doubleÇü - ÀÚ¹Ù¿¡¼­´Â ±âº»ÇüÀÌ ´õºíÇüÀÌ¹Ç·Î D¸¦ ¾²Áö¾Ê¾Æµµ ´õºíÇüÃâ·Â
+		System.out.println(0b1010);				//ì´ì§„ìˆ˜ bëŠ” ì´ì§„ìˆ˜ë¥¼ ëœ»í•¨
+		System.out.println(016);				//8ì§„ìˆ˜
+		System.out.println(0x1F);				//16ì§„ìˆ˜
+		System.out.println(3.14f);				//floatí˜•
+		System.out.println(3.1415D);			//doubleí˜• - ìë°”ì—ì„œëŠ” ê¸°ë³¸í˜•ì´ ë”ë¸”í˜•ì´ë¯€ë¡œ Dë¥¼ ì“°ì§€ì•Šì•„ë„ ë”ë¸”í˜•ì¶œë ¥
 		System.out.println(creditCardNumber);
 		System.out.println(socialSecurityNumber);
 		System.out.println(pi);

@@ -4,12 +4,12 @@ public class HelloChars {
 	
 	public static void main(String[] args) {
 		
-		System.out.println('a');		//ÀÏ¹İ¹®ÀÚ - charÇü
-		System.out.println('\\');		//Æ¯¼ö¹®ÀÚ - '\'¸¦ ½á¼­ \Ãâ·Â
-		System.out.println('\142');		//ÄÚµå°ª 8Áø¼ö Ç¥Çö - 10Áø¼ö·Î´Â 98-> ASCIIÄÚµå°ª¿¡ µû¶ó bÃâ·Â
-		System.out.println('\uAC00');	//UTF-8(Unicode)°ª AC00 : °¡
-		System.out.println('\uAC01');	//Unicode°ª AC01 : °¢
-		System.out.println('°­');		//ÀÏ¹İ¹®ÀÚ
+		System.out.println('a');		//ì¼ë°˜ë¬¸ì - charí˜•
+		System.out.println('\\');		//íŠ¹ìˆ˜ë¬¸ì - '\'ë¥¼ ì¨ì„œ \ì¶œë ¥
+		System.out.println('\142');		//ì½”ë“œê°’ 8ì§„ìˆ˜ í‘œí˜„ - 10ì§„ìˆ˜ë¡œëŠ” 98-> ASCIIì½”ë“œê°’ì— ë”°ë¼ bì¶œë ¥
+		System.out.println('\uAC00');	//UTF-8(Unicode)ê°’ AC00 : ê°€
+		System.out.println('\uAC01');	//Unicodeê°’ AC01 : ê°
+		System.out.println('ê°•');		//ì¼ë°˜ë¬¸ì
 		
 		System.out.print("Hello\nWorld\tHi\b\rABC\r\nDEF"); 
 		System.out.println("\'");

@@ -9,19 +9,19 @@ public class BasicSwitch {
 		double x, y;
 		int op;
 		Scanner input = new Scanner(System.in);
-		System.out.print("µÎ ½Ç¼ö ÀÔ·Â : ");
+		System.out.print("ë‘ ì‹¤ìˆ˜ ì…ë ¥ : ");
 		
 		x = input.nextDouble(); y = input.nextDouble();
-		System.out.print("¹øÈ£¼±ÅÃ 1(+), 2(-), 3(*), 4(/) : ");
+		System.out.print("ë²ˆí˜¸ì„ íƒ 1(+), 2(-), 3(*), 4(/) : ");
 		
 		op = input.nextInt();
 		
 		switch (op) {
-			//case, default´Â switch¹®¿¡¼­ ¾²´Â Å°¿öµå. 
+			//case, defaultëŠ” switchë¬¸ì—ì„œ ì“°ëŠ” í‚¤ì›Œë“œ. 
 			case 1:
 				System.out.printf("%.2f + %.2f = %.2f\n", x, y, x + y);
 				break;
-			// break °¡ ¾øÀ¸¸é default±îÁö ¸ğµÎ ½ÇÇàµÊ. ÇÏ³ªÀÇ °á°ú¸¦ Ãâ·ÂÇÏ±â À§ÇØ¼± »ç¿ëÇØÁà¾ßÇÔ	
+			// break ê°€ ì—†ìœ¼ë©´ defaultê¹Œì§€ ëª¨ë‘ ì‹¤í–‰ë¨. í•˜ë‚˜ì˜ ê²°ê³¼ë¥¼ ì¶œë ¥í•˜ê¸° ìœ„í•´ì„  ì‚¬ìš©í•´ì¤˜ì•¼í•¨	
 			case 2:	
 				System.out.printf("%.2f - %.2f = %.2f\n", x, y, x - y);
 				break;
@@ -33,7 +33,7 @@ public class BasicSwitch {
 				break;
 			
 			default	:
-				System.err.printf("¿¬»êÀÚ ¹øÈ£¸¦ Àß¸ø ÀÔ·ÂÇÏ¿´½À´Ï´Ù.\n");
+				System.err.printf("ì—°ì‚°ì ë²ˆí˜¸ë¥¼ ì˜ëª» ì…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.\n");
 				
 		}
 		

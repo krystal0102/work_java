@@ -5,7 +5,7 @@ public class PrintfTest1 {
 	public static void main(String[] args) {
 		
 		//6-1
-		System.out.printf("%d %f %s", 10, 3.7854, "Á¤¼ö");
+		System.out.printf("%d %f %s", 10, 3.7854, "ì •ìˆ˜");
 		
 		//6-2
 		int year = 2014;

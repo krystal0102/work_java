@@ -7,7 +7,7 @@ public class test3 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		System.out.println("kg¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.println("kgë¥¼ ìž…ë ¥í•˜ì„¸ìš” >> ");
 		
 		double kg = input.nextDouble();
 		double lb = kg / 0.453592;

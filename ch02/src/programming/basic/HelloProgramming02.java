@@ -2,7 +2,7 @@ package programming.basic;
 
 public class HelloProgramming02 {
 
-	static String hello = "¾È³çÇÏ¼¼¿ä. ¿©·¯ºÐ~~";
+	static String hello = "ì•ˆë…•í•˜ì„¸ìš”. ì—¬ëŸ¬ë¶„~~";
 	
 	public static void main(String[] args) {
 		

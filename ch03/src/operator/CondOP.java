@@ -4,12 +4,12 @@ public class CondOP {
 
 	public static void main(String[] args) {
 		int point = 31;
-		String str = (point % 2 == 0) ? "Â¦¼ö" : "È¦¼ö";
-		System.out.printf("%d´Â %s´Ù. %n", point, str);
+		String str = (point % 2 == 0) ? "ì§ìˆ˜" : "í™€ìˆ˜";
+		System.out.printf("%dëŠ” %së‹¤. %n", point, str);
 		
 		double x = 3.45, y = 6.79;
 		double max = (x > y) ? x : y;
-		System.out.printf("%f¿Í %fÁß¿¡¼­ %f°¡ ´õ Å©´Ù.", x, y, max);
+		System.out.printf("%fì™€ %fì¤‘ì—ì„œ %fê°€ ë” í¬ë‹¤.", x, y, max);
 
 	}
 

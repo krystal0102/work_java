@@ -5,12 +5,12 @@ public class Weatherif {
 	public static void main(String[] args) {
 		int degree = 30;
 		
-		//Áß°ýÈ£¸¦ ¾È¾²¸é if´ÙÀ½ÀÇ Ã¹ÁÙ¸¸ if¹®¿¡ Æ÷ÇÔ½ÃÅ´. But ³»¿ëÀÌ ±æ¾îÁú °æ¿ì È¥µ¿ÇÏ±â ½¬¿ì¹Ç·Î {}¾²´Â°É ÃßÃµ
+		//ì¤‘ê´„í˜¸ë¥¼ ì•ˆì“°ë©´ ifë‹¤ìŒì˜ ì²«ì¤„ë§Œ ifë¬¸ì— í¬í•¨ì‹œí‚´. But ë‚´ìš©ì´ ê¸¸ì–´ì§ˆ ê²½ìš° í˜¼ë™í•˜ê¸° ì‰¬ìš°ë¯€ë¡œ {}ì“°ëŠ”ê±¸ ì¶”ì²œ
 		if (30 <= degree); {
-			System.out.println("³¯¾¾°¡ ´þ½À´Ï´Ù.");
+			System.out.println("ë‚ ì”¨ê°€ ë¥ìŠµë‹ˆë‹¤.");
 		}	
 			
-		System.out.println("³¯¾¾ ¿¹º¸¿´½À´Ï´Ù.");
+		System.out.println("ë‚ ì”¨ ì˜ˆë³´ì˜€ìŠµë‹ˆë‹¤.");
 
 	}
 

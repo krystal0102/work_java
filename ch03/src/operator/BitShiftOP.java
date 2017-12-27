@@ -5,16 +5,16 @@ public class BitShiftOP {
 	public static void main(String[] args) {
 		
 		int x = 8, y = 3;
-																 //ÀÌÁø¼ö ¹®ÀÚ¿­·Î ¹Ù²ãÁØ´Ù!
-		System.out.format("%d(%s) >> %d °á°ú %d(%s) %n",x, Integer.toBinaryString(x),
+																 //ì´ì§„ìˆ˜ ë¬¸ìžì—´ë¡œ ë°”ê¿”ì¤€ë‹¤!
+		System.out.format("%d(%s) >> %d ê²°ê³¼ %d(%s) %n",x, Integer.toBinaryString(x),
 				y, x>>3, Integer.toBinaryString(x>>3));
-		// x°ª 8À» ÀÌÁø¼ö·Î ¹Ù²åÀ»¶§´Â 1000ÀÓ >>3¸¦ ÀÌ¿ëÇØ ¿À¸¥ÂÊÀ¸·Î ¼¼¹ø ÀÌµ¿ÇÏ¸é 0001(2) = 1
+		// xê°’ 8ì„ ì´ì§„ìˆ˜ë¡œ ë°”ê¿¨ì„ë•ŒëŠ” 1000ìž„ >>3ë¥¼ ì´ìš©í•´ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì„¸ë²ˆ ì´ë™í•˜ë©´ 0001(2) = 1
 		
 		
-		System.out.format("%d(%s) << %d °á°ú %d(%s) %n",x, Integer.toBinaryString(x),
+		System.out.format("%d(%s) << %d ê²°ê³¼ %d(%s) %n",x, Integer.toBinaryString(x),
 				y, x<<3, Integer.toBinaryString(x<<3));
 		
-		System.out.format("%d(%s) >>> %d °á°ú %d(%s) %n",x, Integer.toBinaryString(x),
+		System.out.format("%d(%s) >>> %d ê²°ê³¼ %d(%s) %n",x, Integer.toBinaryString(x),
 				y, x>>>3, Integer.toBinaryString(x>>>3));
 
 	}

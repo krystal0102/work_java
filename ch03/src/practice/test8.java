@@ -7,14 +7,14 @@ public class test8 {
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
-		System.out.print("¼¼ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.print("ì„¸ ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 		
 		int a = input.nextInt();
 		int b = input.nextInt();
 		int c = input.nextInt();
 		
 		int max = a > b ? (a > c ? a : c) : (b > c ? b : c);
-		System.out.println("°¡Àå Å« ¼ö´Â " + max + "ÀÌ´Ù.");
+		System.out.println("ê°€ì¥ í° ìˆ˜ëŠ” " + max + "ì´ë‹¤.");
 		
 		input.close();
 		

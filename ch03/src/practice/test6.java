@@ -7,7 +7,7 @@ public class test6 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.println("Á¤¼ö ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.println("ì •ìˆ˜ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 		
 		int A = input.nextInt();
 	    
@@ -17,7 +17,7 @@ public class test6 {
 		int ten = A%100 / 10;
 		int il = A%10;
 
-		System.out.printf("%d¸¸ %dÃµ %d¹é %d½Ê %d¿øÀÔ´Ï´Ù.", man, chun, baek, ten, il);
+		System.out.printf("%dë§Œ %dì²œ %dë°± %dì‹­ %dì›ì…ë‹ˆë‹¤.", man, chun, baek, ten, il);
 		
 		input.close();	
 	}

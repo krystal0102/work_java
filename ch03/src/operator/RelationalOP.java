@@ -6,7 +6,7 @@ public class RelationalOP {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("µÎ Á¤¼ö¸¦ ÀÔ·Â >> ");
+		System.out.println("ë‘ ì •ìˆ˜ë¥¼ ì…ë ¥ >> ");
 		int x = input.nextInt();
 		int y = input.nextInt();
 		
@@ -16,7 +16,7 @@ public class RelationalOP {
 		System.out.format("%d <= %d -> %b %n", x, y, x<=y);
 		System.out.format("%d == %d -> %b %n", x, y, x==y);
 		System.out.format("%d != %d -> %b %n", x, y, x!=y);
-		//´À³¦Ç¥´Â not. ±×·¡¼­ °°Áö¾Ê´ÙÀÇ !=
+		//ëŠë‚Œí‘œëŠ” not. ê·¸ë˜ì„œ ê°™ì§€ì•Šë‹¤ì˜ !=
 		input.close();
 	}
 

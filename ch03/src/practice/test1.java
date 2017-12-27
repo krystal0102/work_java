@@ -8,7 +8,7 @@ public class test1 {
 			
 			Scanner input = new Scanner(System.in);
 			
-			System.out.println("µÎ ½Ç¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.println("ë‘ ì‹¤ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			
 			double a = input.nextDouble();
 			double b = input.nextDouble();
@@ -16,10 +16,10 @@ public class test1 {
 			System.out.println(a+b);
 			System.out.println((a+b)/2);
 			
-			/* ´Ù¸¥ÇØ¼³
+			/* ë‹¤ë¥¸í•´ì„¤
 			 * double sum = a+b;
 			 * double avg = sum /2;
-			 * System.out.printf("ÇÕ: %.2f Æò±Õ: %.2f %n", sum, avg);
+			 * System.out.printf("í•©: %.2f í‰ê· : %.2f %n", sum, avg);
 			 */
 			
 			input.close();

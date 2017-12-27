@@ -4,22 +4,22 @@ public class TypeCast {
 	
 	public static void main(String[] args) {
 		
-		// 1. ¸í½ÃÀû Çüº¯È¯
-		byte b = (byte)128; //intÇüÀÎ 128À» byte·Î ¸í½ÃÀû Çüº¯È¯
+		// 1. ëª…ì‹œì  í˜•ë³€í™˜
+		byte b = (byte)128; //intí˜•ì¸ 128ì„ byteë¡œ ëª…ì‹œì  í˜•ë³€í™˜
 		System.out.println(b);
 		
 		byte bt = (byte) -129;
-		System.out.format("%dÀÇ ÀÌÁø¼ö : %s %n", -129, Integer.toBinaryString(-129));
-		System.out.format("%dÀÇ ÀÌÁø¼ö : %s %n",bt, Integer.toBinaryString(bt));
+		System.out.format("%dì˜ ì´ì§„ìˆ˜ : %s %n", -129, Integer.toBinaryString(-129));
+		System.out.format("%dì˜ ì´ì§„ìˆ˜ : %s %n",bt, Integer.toBinaryString(bt));
 		
 		int n = (int) ( 5.0 / 4.0);
-		System.out.println(n); // °ª 1.25ÀÇ ¸í½ÃÀû Çüº¯È¯ double -> int
-		System.out.println(3 / 4); // intÇüÀ¸·Î ³ª¿À±â ¶§¹®¿¡ Çüº¯È¯¾øÀÌ 0À¸·Î Ãâ·Â
-		System.out.println(3 / 4.0); // ¹¬½ÃÀû º¯È¯ int -> double (int3À» double4.0 À» ¸¸³ª¸é¼­ ÄÄÆÄÀÏ·¯°¡ 
-									//double3.0À¸·Î ¹Ù²ã 3.0³ª´©±â 4.0ÀÌ µÊ)
+		System.out.println(n); // ê°’ 1.25ì˜ ëª…ì‹œì  í˜•ë³€í™˜ double -> int
+		System.out.println(3 / 4); // intí˜•ìœ¼ë¡œ ë‚˜ì˜¤ê¸° ë•Œë¬¸ì— í˜•ë³€í™˜ì—†ì´ 0ìœ¼ë¡œ ì¶œë ¥
+		System.out.println(3 / 4.0); // ë¬µì‹œì  ë³€í™˜ int -> double (int3ì„ double4.0 ì„ ë§Œë‚˜ë©´ì„œ ì»´íŒŒì¼ëŸ¬ê°€ 
+									//double3.0ìœ¼ë¡œ ë°”ê¿” 3.0ë‚˜ëˆ„ê¸° 4.0ì´ ë¨)
 		
 		double d = 3 + 4*2;
-		System.out.println(d); // ¹¬½ÃÀû Çüº¯È¯ int -> double 
+		System.out.println(d); // ë¬µì‹œì  í˜•ë³€í™˜ int -> double 
 	}
 
 }

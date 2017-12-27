@@ -9,14 +9,14 @@ public class PersonInfo {
 	
 	public static void main(String[] args) {
 		
-		System.out.print("¸ö¹«°Ô¿Í Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ëª¸ë¬´ê²Œì™€ í‚¤ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
 		
 		Scanner AAA = new Scanner(System.in);
 		
 		weight = AAA.nextInt();
 		height = AAA.nextDouble();
 		
-		System.out.printf("¸ö¹«°Ô: %dkg, Å°: %.1fcm", weight, height);
+		System.out.printf("ëª¸ë¬´ê²Œ: %dkg, í‚¤: %.1fcm", weight, height);
 		
 		AAA.close();
 	}

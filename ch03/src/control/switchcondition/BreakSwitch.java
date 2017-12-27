@@ -6,7 +6,7 @@ public class BreakSwitch {
 	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.println("³âÀÇ ¿ù(month)¸¦ ÀÔ·Â : ");
+		System.out.println("ë…„ì˜ ì›”(month)ë¥¼ ì…ë ¥ : ");
 		int month = input.nextInt();
 		
 		switch (month) {
@@ -14,23 +14,23 @@ public class BreakSwitch {
 			case 1:
 			case 2:
 			case 3:
-				System.out.printf("%d¿ùÀº 1ºĞ±â ÀÔ´Ï´Ù. \n", month);
+				System.out.printf("%dì›”ì€ 1ë¶„ê¸° ì…ë‹ˆë‹¤. \n", month);
 				break;
 				
 			case 4: case 5: case 6:	
-				System.out.printf("%d¿ùÀº 2ºĞ±â ÀÔ´Ï´Ù. \n", month);
+				System.out.printf("%dì›”ì€ 2ë¶„ê¸° ì…ë‹ˆë‹¤. \n", month);
 				break;
 				
 			case 7: case 8: case 9:	
-				System.out.printf("%d¿ùÀº 3ºĞ±â ÀÔ´Ï´Ù. \n", month);
+				System.out.printf("%dì›”ì€ 3ë¶„ê¸° ì…ë‹ˆë‹¤. \n", month);
 				break;
 				
 			case 10: case 11: case 12:	
-				System.out.printf("%d¿ùÀº 4ºĞ±â ÀÔ´Ï´Ù. \n", month);
+				System.out.printf("%dì›”ì€ 4ë¶„ê¸° ì…ë‹ˆë‹¤. \n", month);
 				break;
 				
 			default:
-				System.err.printf("¿ù(month)¸¦ Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù.");
+				System.err.printf("ì›”(month)ë¥¼ ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤.");
 				
 		}
 	}

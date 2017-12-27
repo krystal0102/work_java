@@ -7,19 +7,19 @@ public class test7 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
-		System.out.print("´ŞÀ» ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.print("ë‹¬ì„ ì…ë ¥í•˜ì„¸ìš” >> ");
 		int month = input.nextInt();
 		
-		//ifÁ¶°Ç¹®À» »ç¿ëÇßÀ»¶§
+		//ifì¡°ê±´ë¬¸ì„ ì‚¬ìš©í–ˆì„ë•Œ
 		/*if (month > 0 && month <= 6) {
-			System.out.println(month + "¿ùÀº »ó¹İ±âÀÔ´Ï´Ù.");
+			System.out.println(month + "ì›”ì€ ìƒë°˜ê¸°ì…ë‹ˆë‹¤.");
 		}
 		else if (month >= 7 && month <=12 ) {
-			System.out.println(month + "¿ùÀº ÇÏ¹İ±âÀÔ´Ï´Ù.");
+			System.out.println(month + "ì›”ì€ í•˜ë°˜ê¸°ì…ë‹ˆë‹¤.");
 		}
 		*/
 		
-		String a = (month > 6) ? "ÇÏ¹İ±âÀÔ´Ï´Ù." : "»ó¹İ±âÀÔ´Ï´Ù." ;
+		String a = (month > 6) ? "í•˜ë°˜ê¸°ì…ë‹ˆë‹¤." : "ìƒë°˜ê¸°ì…ë‹ˆë‹¤." ;
 		System.out.println(a);
 		
 		input.close();

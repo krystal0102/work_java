@@ -5,15 +5,15 @@ public class DevideByZero {
 	public static void main(String[] args) {
 		short data1 = 32766;
 		short data2 = 1;
-		//short data3 = data1 + data2; short¶ó°í ¸í½Ã¸¦ Çß¾îµµ intÇüÀ¸·Î º¯È¯µÇ±â ¶§¹®¿¡ ¿À·ù ¹ß»ı. µû¶ó¼­ ¸í½ÃÀû Çüº¯È¯ÇÊ¿ä
+		//short data3 = data1 + data2; shortë¼ê³  ëª…ì‹œë¥¼ í–ˆì–´ë„ intí˜•ìœ¼ë¡œ ë³€í™˜ë˜ê¸° ë•Œë¬¸ì— ì˜¤ë¥˜ ë°œìƒ. ë”°ë¼ì„œ ëª…ì‹œì  í˜•ë³€í™˜í•„ìš”
 		short data3 = (short)(data1 + data2);
 		short data4 = 32766 + 1;
 		System.out.println(data3 + " " + data4);
 		
-		System.out.println(0.0 / 0.0); // NaN Not a Number ¼ıÀÚ°¡¾Æ´Ï´Ù! ¹«½¼ ¼ö¸¦ ¿¬»êÇÏµç NaN°ªÀ¸·Î ³ª¿À°ÔµÊ
-									  // NaNÀº ½Ç¼öÇü¿¡¼­¸¸ Á¸ÀçÇÔ.
-		System.out.println(3 / 0.0); // ¹«ÇÑ´ë°¡ ³ª¿À±â ¶§¹®¿¡ Infinity (3ÀÌ doubleÇüÀ¸·Î º¯È¯µÇ¼­)
-		System.out.println(3 / 0); // Á¤¼ö¸¦ 0À¸·Î ³ª´­ ¼ö ¾ø±â ¶§¹®¿¡ ¿¹¿Ü¹ß»ı. ¿¹¿ÜÃ³¸®°¡ °¡´ÉÇÏ¹Ç·Î RunÀº °¡´ÉÇÔ
+		System.out.println(0.0 / 0.0); // NaN Not a Number ìˆ«ìê°€ì•„ë‹ˆë‹¤! ë¬´ìŠ¨ ìˆ˜ë¥¼ ì—°ì‚°í•˜ë“  NaNê°’ìœ¼ë¡œ ë‚˜ì˜¤ê²Œë¨
+									  // NaNì€ ì‹¤ìˆ˜í˜•ì—ì„œë§Œ ì¡´ì¬í•¨.
+		System.out.println(3 / 0.0); // ë¬´í•œëŒ€ê°€ ë‚˜ì˜¤ê¸° ë•Œë¬¸ì— Infinity (3ì´ doubleí˜•ìœ¼ë¡œ ë³€í™˜ë˜ì„œ)
+		System.out.println(3 / 0); // ì •ìˆ˜ë¥¼ 0ìœ¼ë¡œ ë‚˜ëˆŒ ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ì˜ˆì™¸ë°œìƒ. ì˜ˆì™¸ì²˜ë¦¬ê°€ ê°€ëŠ¥í•˜ë¯€ë¡œ Runì€ ê°€ëŠ¥í•¨
 		
 		String money = "NaN";
 		double moneyDouble = Double.parseDouble(money);
@@ -23,7 +23,7 @@ public class DevideByZero {
 			System.out.println(balance);
 		}
 		else {
-			System.out.println("±İ¾×À» ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+			System.out.println("ê¸ˆì•¡ì„ ë‹¤ì‹œ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		}
 
 	}

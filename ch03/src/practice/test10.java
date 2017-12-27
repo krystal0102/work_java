@@ -6,7 +6,7 @@ public class test10 {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		System.out.print("±İ¾×À» ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.print("ê¸ˆì•¡ì„ ì…ë ¥í•˜ì„¸ìš” >> ");
 		
 		int money = input.nextInt();
 		
@@ -33,7 +33,7 @@ public class test10 {
 		int fchun = money%10000 / 5000;
 		int chun = money%5000 / 1000;
 		
-		System.out.printf("50,000¿ø±Ç %d°³, 10,000¿ø±Ç %d°³, 5,000¿ø±Ç %d°³, 1,000¿ø±Ç %d°³ÀÔ´Ï´Ù.", five, man, fchun, chun);
+		System.out.printf("50,000ì›ê¶Œ %dê°œ, 10,000ì›ê¶Œ %dê°œ, 5,000ì›ê¶Œ %dê°œ, 1,000ì›ê¶Œ %dê°œì…ë‹ˆë‹¤.", five, man, fchun, chun);
 		
 		
 		

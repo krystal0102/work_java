@@ -8,10 +8,10 @@ public class test4 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("¹®ÀÚ ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä ( C: ¼·¾¾, F: È­¾¾) >> ");
+		System.out.println("ë¬¸ìž í•˜ë‚˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” ( C: ì„­ì”¨, F: í™”ì”¨) >> ");
 		String unit = input.next();
 		
-		System.out.println("¿Âµµ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.println("ì˜¨ë„ë¥¼ ìž…ë ¥í•˜ì„¸ìš” >> ");
 		double B = input.nextDouble();
 		
 		double result = 0.0;
@@ -20,13 +20,13 @@ public class test4 {
 		case "F": 
 		case"f":
 		result = (5.0 / 9.0)*(B-32);
-		System.out.printf("¼·¾¾ %.2f ÀÔ´Ï´Ù.", result);
+		System.out.printf("ì„­ì”¨ %.2f ìž…ë‹ˆë‹¤.", result);
 		break;
 		
 		case "C": 
 		case "c":
 		result = (5.0 / 9.0)*(B+32);
-		System.out.printf("È­¾¾ %.2f ÀÔ´Ï´Ù.", result);
+		System.out.printf("í™”ì”¨ %.2f ìž…ë‹ˆë‹¤.", result);
 		break;
 			
 		}

@@ -1,13 +1,13 @@
 package programming.basic;
 
-import java.util.Scanner; //½ºÄ³³Ê¶ó´Â Å¬·¡½º¸¦ ¸ŞÀÎ ¸Ş¼­µå ¾ÈÀÇ Å¬·¡½º¿¡¼­ »ç¿ëÇÏ°Ú´Ù ctrl+shift+O:ÀÚµ¿À¸·Î importÃß°¡
+import java.util.Scanner; //ìŠ¤ìºë„ˆë¼ëŠ” í´ë˜ìŠ¤ë¥¼ ë©”ì¸ ë©”ì„œë“œ ì•ˆì˜ í´ë˜ìŠ¤ì—ì„œ ì‚¬ìš©í•˜ê² ë‹¤ ctrl+shift+O:ìë™ìœ¼ë¡œ importì¶”ê°€
 
 public class HelloOuput {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in); //µû¶ó¼­ ¿©±â¼­´Â java.utilÀ» ÀÏÀÏÈ÷ ±âÀÔÇÏÁö ¾Ê¾Æµµ µÈ´Ù
+		Scanner input = new Scanner(System.in); //ë”°ë¼ì„œ ì—¬ê¸°ì„œëŠ” java.utilì„ ì¼ì¼íˆ ê¸°ì…í•˜ì§€ ì•Šì•„ë„ ëœë‹¤
 		
-		System.out.println("½ÊÁø¼ö¿Í ÀÌÁø¼ö¸¦ °¢°¢ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì‹­ì§„ìˆ˜ì™€ ì´ì§„ìˆ˜ë¥¼ ê°ê° ì…ë ¥í•˜ì„¸ìš”.");
 		int num1 = input.nextInt();
 		int num2 = input.nextInt(2);
 		System.out.println("num1 = " + num1 + ", num2 = " + num2 );
