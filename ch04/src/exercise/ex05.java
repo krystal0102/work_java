@@ -3,18 +3,17 @@ package exercise;
 public class ex05 {
 
 	public static void main(String[] args) {
-		
+		// 예치기간
 		int year;
-
-		int won = 1000000;
+		// 원금
+		double won = 1000000;
 			
-		for ( year = 1; year < 11; year++ ) {
+		for ( year = 1; year <= 10; year++ ) {			
 			
-			double a = (int)won*4.5*year;
+			// 만기 시 총 수령액
+			double total = won * (1 + 0.045 * year);
 			
-			double total = (int)won + (int)a;
-			
-			System.out.printf("%d년차 수령액은 %f원 입니다.\n", year, total);
+			System.out.printf("%d년차 수령액은 %.0f원 입니다.\n", year, total);
 			
 		
 		}
