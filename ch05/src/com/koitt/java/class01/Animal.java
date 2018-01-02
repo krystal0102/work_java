@@ -8,9 +8,10 @@ package com.koitt.java.class01;
    
   
     접근제한자
-   private 해당 클래스에서만 쓸 수 있도록 제한해줌 
-    다른 클래스에서는 접근할 수 없음
-   public 
+   - private : 같은 클래스 내부에서만 사용 가능
+   - (default) : 같은 패키지 내부에서만 사용 가능
+   - protected : default 범위 + 상속 받은 클래스까지 사용 가능
+   - public : 어느 곳이든 사용 가능 
    
    getter, setter 
     */
