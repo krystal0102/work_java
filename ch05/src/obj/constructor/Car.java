@@ -15,6 +15,16 @@ public class Car {
 		this.maxSpeed = maxSpeed;
 	}
 	
+	
+	
+	public String getBrandName() {
+		return brandName;
+	}
+
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
+
 	// 속도 관련 메소드
 	public int speedUp() {
 		int tempSpeed = this.speed; 
