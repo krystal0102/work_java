@@ -2,14 +2,11 @@ package Test;
 
 public class Employee {
 	
-	String name;
-	int age;
-	String address;
-	String dept;
-	int salary;
-	
-	int workHours;
-	int salaryT = 10000;
+	private String name;
+	private int age;
+	private String address;
+	private String dept;
+	private int salary;
 	
 	public Employee() {
 		
@@ -34,12 +31,13 @@ public class Employee {
 		this.salary = salary;
 	}
 	
-	public void setWorkHours(int workHours) {
-		this.workHours = workHours*salaryT;
-	}
+	public void setWorkHours(int workHours) {}
 
 	public void printInfo() {
-		System.out.println(name+age+address+dept);
+		System.out.println("이름: " + name);
+		System.out.println("나이: " + age);
+		System.out.println("주소: " + address);
+		System.out.println("부서: " + dept);
 	}
 
 }

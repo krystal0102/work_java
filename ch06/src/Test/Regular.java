@@ -8,11 +8,12 @@ public class Regular extends Employee {
 	}
 	
 	public void setSalary(int salary) {
-		this.salary = salary;
+		super.setSalary(salary);
 	}
 	
+	@Override
 	public void printInfo() {
-		System.out.println("정규직: " + getSalary());
+		System.out.println("정규직: " + super.getSalary());
 	}
 	
 	

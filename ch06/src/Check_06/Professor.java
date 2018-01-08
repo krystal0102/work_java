@@ -4,7 +4,7 @@ public class Professor extends Person{
 	
 	String dept;
 	
-	public Professor (String name,String dept) {
+	public Professor (String dept, String name) {
 		super(name);
 		this.dept = dept;
 	}
