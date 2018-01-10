@@ -2,10 +2,11 @@ package com.koitt.java.ch07;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Map;
 
 public class HashMapTest {
 		public static void main(String[] args) {
-			HashMap<String, String> hm = new HashMap<String, String>();
+			Map<String, String> hm = new HashMap<String, String>();
 
 			hm.put("대한민국", "서울"); // add대신에 put을 씀. put(K key, V value)
 			hm.put("일본", "동경");
@@ -17,7 +18,7 @@ public class HashMapTest {
 			System.out.print("키 : " + hm.keySet()); // key값만 모아서 출력
 			System.out.println(" 값 : " + hm.values());
 			
-			// 아이터레이터 방식을 이용해 값을 꺼내기
+			// iterator 방식을 이용해 값을 꺼내기
 			Iterator<String> keys = hm.keySet().iterator();
 			while ( keys.hasNext() ) {
 				String key = keys.next();

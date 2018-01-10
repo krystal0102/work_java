@@ -2,12 +2,13 @@ package com.koitt.java.ch07;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.Set;
 
 public class HashSetTest {
 	public static void main(String[] args) {
 		
-		HashSet<Integer> setA = new HashSet<Integer>();
-		HashSet<Integer> setB = new HashSet<Integer>();
+		Set<Integer> setA = new HashSet<Integer>();
+		Set<Integer> setB = new HashSet<Integer>();
 		
 		setA.add(3);	
 		setA.add(5);	
@@ -44,11 +45,11 @@ public class HashSetTest {
 		
 	}
 	
-	public static void print(HashSet<Integer> s) {
+	public static void print(Set<Integer> setA) {
 		
 		// Iterator는 get이 없기 때문에 Iterator객체나 for-each문을 이용해서 순차적으로 값을 뽑아냄
 		
-		Iterator<Integer> i = s.iterator();	
+		Iterator<Integer> i = setA.iterator();	
 		while ( i.hasNext() ) 
 			System.out.print(i.next()+ " ");
 	}
