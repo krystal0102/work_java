@@ -19,10 +19,9 @@ public class ex_04 {
 		Calendar cal = Calendar.getInstance();
 		cal.set(Calendar.YEAR, year);
 		cal.set(Calendar.DATE, date);
-		cal.set(Calendar.MONTH, month);
+		cal.set(Calendar.MONTH, month-1);
 		
 		int datename = cal.get(Calendar.DAY_OF_WEEK);
-		
 		
 		switch(datename){
         case 1:
