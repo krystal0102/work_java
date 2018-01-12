@@ -2,6 +2,7 @@ package generics;
 
 import java.util.ArrayList;
 
+// generic을 활용한 클래스
 public class MyContainer<E> {
 	private ArrayList<E> list;
 	

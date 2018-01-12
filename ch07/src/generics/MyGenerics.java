@@ -1,8 +1,10 @@
 package generics;
 
 public class MyGenerics {
+	
+	// method에 generic을 붙여 사용할 땐 메소드명 앞에 입력하면 된다
 	public static <T> T get (T[] ary, int index) {
-		return ary[index];
+		return ary[index];	// 어레이의 타입에 따라 <T>가 결절됨
 	}
 	
 	public static <T> T getLast (T[] ary) {
