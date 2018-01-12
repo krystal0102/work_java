@@ -9,6 +9,7 @@ public class Student extends Person {
 	String studentId;
 	double[] avgScore;
 	
+				// <----  상위 클래스에 존재하는 생성자  ----> //		
 	public Student(String name, int age, String address,String univ, String dept, String studentId) {
 		super(name, age, address);
 		this.univ = univ;
@@ -43,7 +44,7 @@ public class Student extends Person {
 		System.out.println("8학기 학점을 순서대로 입력하세요.");
 		
 		for (int i = 0; i < dajung.avgScore.length; i++) {
-		System.out.println((i+1) +"1학기 학점 -> ");
+		System.out.println((i+1) +"1학기 학점 -> ");	// 0부터 시작하니까 1을 더해준것
 		dajung.avgScore[i] = scanner.nextDouble();
 		}
 		
