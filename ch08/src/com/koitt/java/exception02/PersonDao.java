@@ -33,9 +33,16 @@ public class PersonDao {
 	// Argument로 전달받은 객체를 list에서 제거
 	public void delete(Person p) throws MyException {
 		// list에서 Argument로 전달받은 객체의 name과 동일한 객체가 있는지 확인
-		for (Person item : this.list) {
+		/*for (Person item : this.list) {
 			if (item.equals(p)) {
 				list.remove(item);
+				return;
+			}
+		}*/
+		
+		for (int i = 0; i < this.list.size(); i++) {
+			if (this.list.get(i).equals(p)) {
+				this.list.remove(i);
 				return;
 			}
 		}
@@ -44,7 +51,19 @@ public class PersonDao {
 		throw new MyException("E02: 삭제할 사람이 없습니다.");
 	}
 	
-	
+	public void update(Person p) throws MyException {
+		// list 에서 Argument로 전달받은 객체의 name과 동일한 객체가 있는지 확인
+		for (Person item : this.list) {
+			if (item.equals(p)) {
+				// item.setName(p.getName()); name을 새로 set할 필요가 없다
+				item.setAge(p.getAge());
+				return; // 찾았으니까 검색을 중단하고 끝낸다
+			}
+		} 
+		
+		// 업데이트 실패할 경우 예외처리
+		throw new MyException("E03: 수정할 사람이 없습니다.");
+	}
 	
 	
 	

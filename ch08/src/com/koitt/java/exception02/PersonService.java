@@ -18,8 +18,12 @@ public class PersonService {
 		return dao.selectAll();
 	}
 	
-	public void remove(Person p) throws MyException {
+	public void remove (Person p) throws MyException {
 		dao.delete(p);
+	}
+	
+	public void mofify (Person p) throws MyException {
+		dao.update(p);
 	}
  
 }
