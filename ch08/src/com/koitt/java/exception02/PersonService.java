@@ -17,5 +17,9 @@ public class PersonService {
 	public List<Person> read() {
 		return dao.selectAll();
 	}
+	
+	public void remove(Person p) throws MyException {
+		dao.delete(p);
+	}
  
 }
