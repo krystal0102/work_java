@@ -59,15 +59,21 @@ public class PersonController {
 		 String name = this.input.next();
 
 		 System.out.print("나이: ");
-		 int age = input.nextInt();
+		 int age = this.input.nextInt();
 
 		 // 입력받은 정보를 객체화
 		 Person p = new Person(name, age);	
 
 		 // Service 로 입력받은 사람 객체를 전달(추가)
-		 this.service.add(p);
-
-		 System.out.println("입력완료!!");
+		 try {
+			 this.service.add(p);
+			 System.out.println("입력완료!!");
+		 }
+		 catch (MyException e) {
+			 // Dao에서 발생한 예외를 service를 거쳐 여기까지 온 다음 출력
+			 System.out.println(e.getMessage());	
+		 }
+		 
 	}
 	 
 	public void menuRead() {
