@@ -28,7 +28,7 @@ public class PersonController {
 			System.out.print("메뉴번호 입력 > ");
 			
 			// 입력받은 메뉴번호
-			int menu = input.nextInt();
+			int menu = Integer.parseInt(input.nextLine());	// 한 줄 단위로 입력받는 String타입
 			
 			switch (menu) {
 			 case 1:
@@ -56,24 +56,35 @@ public class PersonController {
 		 System.out.println("=== 사람 정보를 입력해주세요(quit: 종료) ===");
 
 		 System.out.print("이름: ");
-		 String name = this.input.next();
+		 String name = this.input.nextLine();		// 한 줄 입력
 
 		 System.out.print("나이: ");
-		 int age = this.input.nextInt();
-
-		 // 입력받은 정보를 객체화
-		 Person p = new Person(name, age);	
-
-		 // Service 로 입력받은 사람 객체를 전달(추가)
+		 Integer age = null;		 
+		 
 		 try {
-			 this.service.add(p);
-			 System.out.println("입력완료!!");
+			 age = Integer.parseInt(this.input.nextLine()); // 한 줄 입력받음
 		 }
-		 catch (MyException e) {
-			 // Dao에서 발생한 예외를 service를 거쳐 여기까지 온 다음 출력
-			 System.out.println(e.getMessage());	
+		 catch (NumberFormatException e) {
+			 System.out.println("숫자만 입력해주세요");	
+			 return;
+		 }
+		 catch (Exception e) {
+			 System.out.println("알 수 없는 예외발생");
+			 return;
 		 }
 		 
+		 // 입력받은 정보를 객체화
+		 Person p = new Person(name, age);	
+		 
+		 // Service 로 입력받은 사람 객체를 전달(추가)
+		 try {
+		 this.service.add(p);
+		 System.out.println("입력완료!!");
+		 }
+		 catch (MyException e) {
+			 // Dao에서 발생한 예외를 service를  거쳐 여기까지 온 다음 출력
+			 System.out.println(e.getMessage());
+		 }
 	}
 	 
 	public void menuRead() {
