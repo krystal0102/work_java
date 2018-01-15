@@ -30,7 +30,17 @@ public class PersonController {
 			System.out.print("메뉴번호 입력 > ");
 			
 			// 입력받은 메뉴번호
-			int menu = Integer.parseInt(input.nextLine());	// 한 줄 단위로 입력받는 String타입
+			int menu = -1;
+			
+			try {
+				menu = Integer.parseInt(input.nextLine());	// 한 줄 단위로 입력받는 String타입
+			}
+			
+			catch (NumberFormatException e) {
+				System.out.println("메뉴는 숫자로만 입력해야지");
+				continue;
+			}
+			
 			
 			switch (menu) {
 			 case 1:
@@ -88,8 +98,8 @@ public class PersonController {
 		 
 		 // Service 로 입력받은 사람 객체를 전달(추가)
 		 try {
-		 this.service.add(p);
-		 System.out.println("입력완료!!");
+			 this.service.add(p);
+			 System.out.println("입력완료!!");
 		 }
 		 catch (MyException e) {
 			 // Dao에서 발생한 예외를 service를  거쳐 여기까지 온 다음 출력
