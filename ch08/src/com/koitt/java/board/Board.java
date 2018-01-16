@@ -85,7 +85,7 @@ public class Board {
 	
 	@Override
 	public int hashCode() {
-		return this.id + this.title.hashCode() + this.content.hashCode() 
+		return this.id.hashCode() + this.title.hashCode() + this.content.hashCode() 
 				+ this.writer.hashCode() + this.regDate.hashCode();
 	}
 
@@ -106,7 +106,5 @@ public class Board {
 		String a = b.toString();
 		return a;
 	}
-
-
 	
 }
