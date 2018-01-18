@@ -32,7 +32,7 @@ public class BankAccount {
 			}
 			
 			this.balance -= money;
-			System.out.println(money + "원 인출하여 잔액이" + balance + "입니다.");
+			System.out.println(money + "원 인출하여 잔액이 " + balance + "원 입니다.");
 		
 	}
 }
