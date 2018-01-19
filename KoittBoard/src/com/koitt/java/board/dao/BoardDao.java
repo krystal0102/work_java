@@ -1,18 +1,31 @@
 package com.koitt.java.board.dao;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.ObjectStreamException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.koitt.java.board.exception.BoardException;
 import com.koitt.java.board.model.Board;
+import com.koitt.java.util.FileManager;
 
 public class BoardDao {
+	
+	public static final String FILE_NAME = "Board_list.java";
 	
 	// 데이터베이스 대신 게시글을 저장하는 용도로 사용
 	private List<Board> list;
 	
 	public BoardDao() {
-		this.list = new ArrayList<Board>();
+		/*this.list = new ArrayList<Board>();*/
+		// TODO 6. this.list = loadFromFile(파일명);
+		this.list = FileManager.loadFromFile(BoardDao.FILE_NAME);
 	}
 	
 									// 2.
@@ -25,6 +38,8 @@ public class BoardDao {
 		}
 		
 		list.add(board);
+		// TODO 3. saveToFile(list, 파일명);
+		FileManager.saveToFile(this.list, BoardDao.FILE_NAME);
 	}
 	
 	// 1.
@@ -37,6 +52,8 @@ public class BoardDao {
 		for (int i = 0; i < this.list.size(); i++) {
 			if (this.list.get(i).equals(board)) {
 				this.list.remove(this.list.get(i));
+				// TODO 4. saveToFile(list, 파일명);
+				FileManager.saveToFile(this.list, BoardDao.FILE_NAME);
 				return;
 			}
 		}
@@ -57,6 +74,8 @@ public class BoardDao {
 				item.setContent(board.getContent());
 				item.setTitle(board.getTitle());
 				item.setModiDate(board.getModiDate());
+				// TODO 5. saveToFile(list, 파일명);
+				FileManager.saveToFile(this.list, BoardDao.FILE_NAME);
 				return;
 			}
 		}
@@ -72,7 +91,11 @@ public class BoardDao {
 				return true;	// 글이 존재할 경우 존재한다고 리턴
 			}
 		}
-		
 		return false;	// 다 찾아봤는데 없어서 false 리턴
 	}
+	
+	public Integer lastBoardId() {
+		return list.get(list.size() - 1).getId();
+	}
+
 }

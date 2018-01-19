@@ -113,19 +113,18 @@ public class Board implements Serializable {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Board [id=");
+		builder.append("게시판 [");
 		builder.append(id);
-		builder.append(", title=");
+		builder.append("] 제목: ");
 		builder.append(title);
-		builder.append(", content=");
+		builder.append(" / 내용: ");
 		builder.append(content);
-		builder.append(", writer=");
+		builder.append(" / 작성자: ");
 		builder.append(writer);
-		builder.append(", regDate=");
+		builder.append(" / 작성일: ");
 		builder.append(regDate);
-		builder.append(", modiDate=");
+		builder.append(" / 수정일: ");
 		builder.append(modiDate);
-		builder.append("]");
 		return builder.toString();
 	}	
 }
