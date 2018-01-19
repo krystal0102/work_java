@@ -3,30 +3,33 @@ package com.koitt.java.board.model;
 import java.io.Serializable;
 import java.util.Date;
 
+// Java Bean 만들기
 public class Board implements Serializable {
+	private Integer id;		// 글 번호
+	private String title;	// 글 제목
+	private String content;	// 글 내용
+	private String writer;	// 작성자
+	private Date regDate;	// 글 생성일
 	
-	// java bean 만들기
-	private Integer id;			// 글 번호
-	private String title;		// 글 제목
-	private String content;		// 글 내용
-	private String writer;		// 작성자
-	private Date regDate;		// 글 생성일
-
+	// 1.
+	private Date modiDate;	// 글 수정일 
 	
 	// 1. 기본 생성자
 	public Board() {}
-	
-	// 2. 생성자 (모든 필드 초기화)
-	public Board(Integer id, String title, String content, String writer, Date regDate) {
-		super();
+
+	// 2. 생성자 (모든 필드 초기화)														// 2.
+	public Board(Integer id, String title, String content, String writer, Date regDate, Date modiDate) {
 		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.writer = writer;
 		this.regDate = regDate;
+		
+		// 3.
+		this.modiDate = modiDate;
 	}
-	
-	// 3. getter setter
+
+	// 3. getter, setter
 	public Integer getId() {
 		return id;
 	}
@@ -67,11 +70,20 @@ public class Board implements Serializable {
 		this.regDate = regDate;
 	}
 	
+	// 4.
+	public Date getModiDate() {
+		return modiDate;
+	}
+
+	public void setModiDate(Date modiDate) {
+		this.modiDate = modiDate;
+	}
+
 	// 4. hashCode
 	@Override
 	public int hashCode() {
-		return this.id.hashCode() + this.title.hashCode() + this.content.hashCode() 
-				+ this.writer.hashCode() + this.regDate.hashCode();
+		return this.id.hashCode() + this.content.hashCode() + this.title.hashCode() + 
+				this.writer.hashCode() + this.regDate.hashCode() + /* 5. */this.modiDate.hashCode();
 	}
 	
 	// 5. equals
@@ -83,7 +95,7 @@ public class Board implements Serializable {
 			return true;
 		}
 		
-		// 5-2. Arument가 Board를 상속받았는지 검사
+		// 5-2. Argument가 Board를 상속받았는지 검사
 		if (!(obj instanceof Board)) {
 			return false;
 		}
@@ -93,28 +105,27 @@ public class Board implements Serializable {
 		if (this.id.equals(b.id)) {
 			return true;
 		}
-		return false;
 		
+		return false;
 	}
 	
-	
-
+	// 6. toString
 	@Override
 	public String toString() {
-		StringBuilder b = new StringBuilder();
-		b.append("게시판 [");
-		b.append(this.id);
-		b.append("] 제목:");
-		b.append(this.title);
-		b.append(" / 내용:");
-		b.append(this.content);
-		b.append(" / 작성자:");
-		b.append(this.writer);
-		b.append(" / 작성일:");
-		b.append(this.regDate);
-		b.append(" ");
-		String a = b.toString();
-		return a;
-	}
-	
+		StringBuilder builder = new StringBuilder();
+		builder.append("Board [id=");
+		builder.append(id);
+		builder.append(", title=");
+		builder.append(title);
+		builder.append(", content=");
+		builder.append(content);
+		builder.append(", writer=");
+		builder.append(writer);
+		builder.append(", regDate=");
+		builder.append(regDate);
+		builder.append(", modiDate=");
+		builder.append(modiDate);
+		builder.append("]");
+		return builder.toString();
+	}	
 }
