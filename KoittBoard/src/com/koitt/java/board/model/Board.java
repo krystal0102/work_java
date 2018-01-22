@@ -5,7 +5,8 @@ import java.util.Date;
 
 // Java Bean 만들기
 public class Board implements Serializable {
-	private Integer id;		// 글 번호
+	private Integer id;		// 글 번호 // Integer 기본값 null -> if문 이용시  null값을 체크할 수 있음
+			// int 기본값0 -> 입력을 안받았을때 비어있는 값을 따로 지정해야함
 	private String title;	// 글 제목
 	private String content;	// 글 내용
 	private String writer;	// 작성자
