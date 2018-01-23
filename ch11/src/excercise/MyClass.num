@@ -1,0 +1,40 @@
+1 package excercise;
+2 
+3 import java.io.BufferedReader;
+4 import java.io.BufferedWriter;
+5 import java.io.FileInputStream;
+6 import java.io.FileNotFoundException;
+7 import java.io.FileOutputStream;
+8 import java.io.FileReader;
+9 import java.io.FileWriter;
+10 import java.io.IOException;
+11 
+12 public class MyClass {
+13 	public static void main(String[] args) {
+14 
+15 
+16 		try {
+17 			// Connection  Stream
+18 			FileReader fr = new FileReader("src/excercise/MyClass.java");
+19 			FileWriter fw = new FileWriter("src/excercise/MyClass.num");
+20 			// Chain Stream
+21 			BufferedReader br = new BufferedReader(fr);				// 한 줄씩 읽으려고.. BufferedReader 의 readLine()메소드가 한줄씩 읽어주니까 사용한거임
+22 			BufferedWriter bw = new BufferedWriter(fw);
+23 
+24 			String data;
+25 			// 여기서 i는 줄 번호겠지
+26 			for (int i = 1; (data = br.readLine()) != null; i++) {
+27 				bw.write(i + " " + data + "\n");
+28 			}
+29 
+30 			// 항상 닫을때는 Chain먼저
+31 			br.close();
+32 			bw.close();
+33 			fr.close();
+34 			fw.close();
+35 
+36 		} catch (Exception e1) {
+37 			e1.printStackTrace();
+38 		}
+39 	}
+40 }
