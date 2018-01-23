@@ -25,9 +25,9 @@ public class WriteFiles {
 				fos.write(data);
 			}
 			System.out.println(outFname + " : 파일이 생성되었습니다.");
-		} catch (FileNotFoundException e) {
+		} /*catch (FileNotFoundException e) {				// IOException 을 상속 받고 있으므로 쓰지 않아도 되긴함
 			e.printStackTrace();
-		} catch (IOException e) {
+		}*/ catch (IOException e) {
 			System.err.println(e);
 		} finally {
 			try {
