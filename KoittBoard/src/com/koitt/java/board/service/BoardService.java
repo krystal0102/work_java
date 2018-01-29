@@ -25,16 +25,16 @@ public class BoardService {
 		return dao.selectAll();
 	}
 
-	public void remove(Board board) throws BoardException {
+	public void remove(Board board) throws BoardException, SQLException {
 		dao.delete(board);
 	}
 
-	public void modify(Board board) throws BoardException {
+	public void modify(Board board) throws BoardException, SQLException {
 		board.setModiDate(new Date());
 		dao.update(board);
 	}
 
-	public boolean isExist(Board board) {
+	public boolean isExist(Board board) throws SQLException {
 		return dao.isExist(board);
 	}
 }

@@ -105,7 +105,23 @@ public class DBManager {
 
 		// 2. SQL문 작성
 		StringBuilder sql = new StringBuilder();
-		sql.append("UPDATE board SET title LIKE ?");
+		sql.append("UPDATE board ");
+		sql.append("SET title = ?, content = ?, modidate = CURDATE() " );
+		sql.append("WHERE no = ?" );
+
+		// 3. SQL문 실행을 위한 객체 생성
+		pstmt = conn.prepareStatement(sql.toString());
+
+		// 4. SQL문 물음표 채우기
+		pstmt.setString(1, board.getTitle());
+		pstmt.setString(2, board.getContent());
+		pstmt.setInt(3, board.getId());
+
+		// 5. 채운 SQL문 실행
+		pstmt.executeUpdate();
+
+		// 6. 객체 연결 해제하는 메소드호출 
+		this.close();
 
 	}
 
@@ -114,9 +130,20 @@ public class DBManager {
 		conn = DriverManager.getConnection(URL + "/" + DB_NAME, ID, PASSWORD);
 
 		// 2. SQL문 작성
-		String sql = "DELETE FROM board WHERE no LIKE ?";
-		
-		
+		StringBuilder sql = new StringBuilder();
+		sql.append("DELETE FROM board WHERE no = ?" );
+
+		// 3. SQL문 실행을 위한 객체 생성
+		pstmt = conn.prepareStatement(sql.toString());
+
+		// 4. SQL문 물음표 채우기
+		pstmt.setInt(1, board.getId());
+
+		// 5. 채운 SQL문 실행
+		pstmt.executeUpdate();
+
+		// 6. 객체 연결 해제하는 메소드호출 
+		this.close();
 
 	}
 
